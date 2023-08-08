@@ -1,7 +1,9 @@
 <template>
-  <BaseSection noPaddingY class="min-h-[70vh] mt-[64px] mb-20 flex items-center" id="hero">
+  <BaseSection noPaddingY class="min-h-[70vh] mt-[64px] mb-20 flex items-center" id="home">
     <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 items-center">
-      <nuxt-img placeholder loading="lazy"
+      <nuxt-img
+        placeholder
+        loading="lazy"
         sizes="sm:100vw lg:576px"
         class="py-8 lg:my-0 lg:order-last"
         data-aos="fade-up"
@@ -9,20 +11,13 @@
         src="/img/hero.svg"
       />
       <div>
-        <span
-          data-aos="fade-right"
-          data-aos-once="true"
-          class="text-base text-blue font-semibold uppercase tracking-wide"
-          >digitaliza tu empresa</span
-        >
         <h1
           data-aos="fade-right"
           data-aos-once="true"
           data-aos-delay="100"
-          class="text-gray-800 text-4xl sm:text-5xl xl:text-6xl font-extrabold"
+          class="text-gray-800 font-serif text-4xl sm:text-5xl xl:text-6xl font-bold"
         >
-          Desarrollamos <br />
-          <span class="text-blue">la solución</span> que necesites<span class="text-blue">.</span>
+          Aseo industrial, mantenimiento y certificación de equipos
         </h1>
         <p
           data-aos="fade-right"
@@ -30,8 +25,7 @@
           data-aos-delay="200"
           class="mt-4 text-gray-600 text-lg sm:text-xl"
         >
-          Cada empresa es única. Por eso digitalizamos a la medida de las <b class="font-bold">necesidades únicas</b> de
-          tu empresa.
+          Bajada de titulo con un mensaje complementario
         </p>
 
         <div class="md:flex md:space-x-4" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">

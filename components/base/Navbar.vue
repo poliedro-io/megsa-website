@@ -1,12 +1,6 @@
 <template>
-  <div class="fixed top-0 left-0 right-0 z-10">
-    <nav
-      id="navbar"
-      :class="[
-        'transition duration-150 relative',
-        isNavbarActive || isMenuActive ? 'bg-gray-900 shadow-xl' : 'bg-white',
-      ]"
-    >
+  <div class="fixed top-0 left-0 right-0 z-10 shadow-md">
+    <nav id="navbar" class="transition duration-150 relative bg-white">
       <div class="max-w-7xl mx-auto px-2 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
           <div class="absolute inset-y-0 right-0 flex items-center xl:hidden">
@@ -33,10 +27,10 @@
                 placeholder
                 loading="lazy"
                 :class="[{ invert: !isNavbarActive && !isMenuActive }, 'h-8 w-auto']"
-                src="/img/logo-lg.svg"
-                width="200"
+                src="/img/logo-lg.png"
+                width="auto"
                 height="100"
-                alt="Workflow"
+                alt="megsa"
               />
             </a>
             <div class="hidden xl:block">
@@ -44,22 +38,13 @@
                 <a
                   v-for="(item, index) of sections"
                   :key="index"
-                  v-smooth-scroll
                   :href="item.id"
+                  v-smooth-scroll
                   v-bind:class="[{ selected: isSelected(item.id) }, { alt: !isNavbarActive }, 'navbar-item']"
                   aria-current="page"
                   >{{ item.title }}</a
                 >
               </div>
-            </div>
-
-            <div class="space-x-2 hidden xl:flex">
-              <a v-bind:class="[{ alt: !isNavbarActive }, 'navbar-button']" href="https://wa.me/56964033243">
-                Enviar Whatsapp</a
-              >
-              <button v-bind:class="[{ alt: !isNavbarActive }, 'navbar-button']" @click="downloadBrochure">
-                Descargar Brochure
-              </button>
             </div>
           </div>
         </div>
@@ -78,11 +63,6 @@
             >{{ item.title }}</a
           >
         </div>
-        <div class="py-4 space-y-2 border-t border-gray-600">
-            <a href="https://wa.me/56964033243" class="navbar-item yellow" aria-current="page">Enviar whatsapp</a>
-            <a v-smooth-scroll class="navbar-item yellow" aria-current="page" @click="downloadBrochure"
-              >Descargar Brochure</a>
-        </div>
       </div>
     </nav>
   </div>
@@ -92,10 +72,10 @@ export default {
   name: 'BaseNavbar',
   data() {
     const sections = [
-      { title: 'Soluciones', id: '#solutions' },
-      { title: 'Funcionalidades', id: '#features' },
-      { title: 'Partner digital', id: '#partner' },
-      { title: 'Digitalización', id: '#digitalization' },
+      { title: 'Inicio', id: '#home' },
+      { title: 'Nosotros', id: '#us' },
+      { title: 'Servicios', id: '#solutions' },
+      { title: 'Seguridad', id: '#security' },
       { title: 'Clientes', id: '#customers' },
       { title: 'Contacto', id: '#contact' },
     ]
@@ -105,7 +85,7 @@ export default {
       sections,
       currentId: null,
       isMenuActive: false,
-      isNavbarActive: false,
+      isNavbarActive: true,
     }
   },
   beforeMount() {
@@ -129,12 +109,9 @@ export default {
     handleScroll(event) {
       this.isMenuActive = false
       const h = window.innerHeight
-      const y = window.scrollY
-      this.isNavbarActive = y > 128
-
       const current = this.sections.find(({ id }) => {
         const { top, bottom } = document.querySelector(id).getBoundingClientRect()
-        return (top >= -h / 2 && top <= h / 2) || (bottom >= h / 2 && bottom <= h)
+        return top <= h / 3 && bottom > h / 3
       })
       if (current) {
         this.currentId = current.id

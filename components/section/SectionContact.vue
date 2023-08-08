@@ -5,10 +5,9 @@
         <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:512px" src="/img/message.svg" />
       </div>
       <div class="max-w-xl mx-auto">
-        <BaseHeader color="yellow" alt supertitle="Contáctanos" title="Respondemos al instante." />
+        <BaseHeader color="yellow" alt title="Contacto" />
         <p class="section-paragraph white">
-          No dudes en contactarnos si quieres conocer nuestra forma de trabajo, las tecnologías que usamos o concertar
-          una reunión para contarnos tu problema. <br />
+          Texto de contacto...<br />
           <a class="text-yellow hover:underline font-semibold" href="https://wa.me/56964033243">Hablemos por Whatsapp</a
           >, o envíanos un mensaje con el siguiente formulario:
         </p>

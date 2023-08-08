@@ -2,15 +2,13 @@
   <div class="w-full">
     <SectionHero />
 
+    <SectionUs :items="strenghts" />
+
     <SectionSolutions :items="solutions" />
 
-    <SectionFeatures :items="features" />
+    <SectionSecurity :items="security" />
 
-    <SectionPartner />
-
-    <SectionDigitalization :items="digitalization" />
-
-    <SectionCustomers />
+    <SectionCustomers :items="customers" />
 
     <SectionContact />
   </div>
@@ -21,12 +19,14 @@ export default {
   name: 'IndexPage',
   async asyncData({ $content, params }) {
     const solutions = await $content('solutions', params.slug).sortBy('id', 'asc').fetch()
-    const features = await $content('features', params.slug).sortBy('id', 'asc').fetch()
-    const digitalization = await $content('digitalization', params.slug).sortBy('id', 'asc').fetch()
+    const strenghts = await $content('strenghts', params.slug).sortBy('id', 'asc').fetch()
+    const security = await $content('security', params.slug).sortBy('id', 'asc').fetch()
+    const customers = await $content('customers', params.slug).sortBy('id', 'asc').fetch()
     return {
       solutions,
-      features,
-      digitalization,
+      strenghts,
+      security,
+      customers,
     }
   },
 }

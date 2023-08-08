@@ -1,5 +1,5 @@
 <template>
-  <section v-bind="$attrs" :class="['relative', { 'pt-24': separatorTop }, { 'pb-24': separatorBottom }]">
+  <section :id="id" v-bind="$attrs" :class="['relative', { 'pt-24': separatorTop }, { 'pb-24': separatorBottom }]">
     <div v-if="separatorTop" class="separator top">
       <svg
         preserveAspectRatio="none"
@@ -15,7 +15,6 @@
     </div>
 
     <div
-      :id="id"
       data-aos="fade-up"
       data-aos-once="true"
       :class="['max-w-7xl mx-auto py-20', noPaddingX ? 'px-0' : 'px-4 sm:px-6 lg:px-8']"

@@ -1,7 +1,7 @@
 <template>
   <BaseSection id="brochure" class="dark-bg">
     <div class="py-16">
-      <BaseHeader alt color="yellow" center supertitle="Conócenos" title="Revisa nuestra presentación" />
+      <BaseHeader alt color="yellow" center title="Revisa nuestra presentación" />
       <p class="section-paragraph white max-w-lg sm:text-center sm:mx-auto">
         Te invitamos a descargar nuestro Brochure en formato PDF para que nos conozcas mejor. Te recomendamos
         especialmente la sección <b>Historias de digitalización</b>:
@@ -14,12 +14,7 @@
           class="btn yellow w-full sm:w-40"
           >Descargar</a
         >
-        <a
-          v-smooth-scroll
-          href="#contact"
-          class="btn blue w-full sm:w-40"
-          >Contactar</a
-        >
+        <a v-smooth-scroll href="#contact" class="btn blue w-full sm:w-40">Contactar</a>
       </div>
     </div>
   </BaseSection>

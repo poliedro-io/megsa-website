@@ -2,7 +2,7 @@
   <BaseSection id="features" bg-color="blue-50">
     <div class="lg:grid lg:grid-cols-2 lg:gap-28">
       <div>
-        <BaseHeader color="blue" supertitle="soluciones modernas" title="Integramos las últimas tecnologías web." />
+        <BaseHeader color="blue" title="Integramos las últimas tecnologías web" />
 
         <p class="section-paragraph">
           En Poliedro nos apasiona la tecnología, y procuramos estar siempre al día con las últimas herramientas

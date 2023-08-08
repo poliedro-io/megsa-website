@@ -1,16 +1,16 @@
 <template>
-  <BaseSection id="digitalization">
+  <BaseSection id="security">
     <div class="lg:grid lg:grid-cols-2 lg:gap-16">
       <div>
-        <BaseHeader title="Beneficios de la digitalización" supertitle="para considerar" color="blue" />
+        <BaseHeader title="Seguridad como primer valor" color="blue" />
 
         <p class="section-paragraph">
-          Hoy en día las tecnologías digitales facilitan enormemente la forma en que trabajamos. En el ámbito
-          empresarial, aprovechar estas nuevas herramientas es <b>indispensable</b> para optimizar los procesos y lograr
-          así una <b>ventaja sustancial</b> respecto a la competencia.
+          Todas las actividades que realizamos traen consigo un determinado riesgo, el cual puede aumentar o disminuir
+          en función de nuestras acciones.
         </p>
         <p class="section-paragraph">
-          Para una empresa moderna la digitalización debe ser una prioridad, y los motivos sobran.
+          Con el fin de evitar cualquier daño tanto a nosotros, los equipos o el medio ambiente son necesarios diversos
+          controles, los cuales varían de acuerdo a cada labor a realizar.
         </p>
 
         <div class="my-8 lg:flex lg:justify-center max-w-lg">
