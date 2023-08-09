@@ -1,5 +1,5 @@
 <template>
-  <BaseSection no-padding-x id="solutions" class="dark-bg" separatorTop separatorBottom>
+  <BaseSection no-padding-x id="solutions" class="bg-gray-800" separatorTop separatorBottom>
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <BaseHeader alt color="yellow" center title="Nuestros servicios" />
@@ -8,7 +8,7 @@
       <div class="flex lg:justify-center">
         <p class="section-paragraph white max-w-2xl lg:text-center">
           Nuestra empresa colabora en las diferentes áreas productivas: Desde aseo industrial hasta el mantenimiento y
-          certificación de equipos y Aero-plantas en los diferentes aeropuertos de nuestro país . También estamos en
+          certificación de equipos y Aero-plantas en los diferentes aeropuertos de nuestro país. También estamos en
           mercados de centro América: Guatemala, Salvador y Honduras, por medio de nuestra filial Praind-Consultores.
         </p>
       </div>
@@ -41,9 +41,8 @@
         </div>
       </div>
     </div>
-
-    <div class="px-4 sm:px-6 lg:px-8 sm:flex sm:justify-center">
-      <a v-smooth-scroll href="#contact" class="btn yellow w-full sm:w-40">Contactar</a>
+    <div class="px-4 sm:px-6 lg:px-16">
+      <ContactButton centered />
     </div>
   </BaseSection>
 </template>

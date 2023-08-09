@@ -1,12 +1,19 @@
 <template>
   <div class="cursor-default">
     <dt>
-      <div :class="[bgColor, shadow,  'transition-all flex items-center justify-center h-14 w-14 rounded-md p-4 text-white bg-lue']">
+      <div
+        :class="[
+          iconBg,
+          shadow,
+          `text-${iconColor}`,
+          'transition-all flex items-center justify-center h-14 w-14 rounded-md p-4 mb-4',
+        ]"
+      >
         <component :is="icon" :size="28" />
       </div>
-      <p :class="['mt-4 text-base font-medium', textColor]">{{ title }}</p>
+      <p v-if="title" :class="['text-base font-medium', `text-${titleColor}`]">{{ title }}</p>
     </dt>
-    <dd class="mt-2 text-sm text-gray-500">
+    <dd :class="['mt-2 text-sm', `text-${textColor}`]">
       {{ description }}
     </dd>
   </div>
@@ -15,18 +22,36 @@
 export default {
   name: 'BaseItem',
   props: {
-    title: {type: String, default: ''},
-    description: {type: String, default: ''},
-    icon: {type: String, default: ''},
-    color: {type: String, default: 'blue'}
+    title: { type: String, default: '' },
+    description: { type: String, default: '' },
+    icon: { type: String, default: '' },
+    mode: { type: String, default: 'dark', validator: (value) => ['light', 'dark'].includes(value) },
   },
-  data(){
-    // const color = ['blue', 'yellow', 'green', 'violet'][this.index % 4] 
+  data() {
+    const { iconBg, iconColor, titleColor, textColor, shadow } = modes[this.mode]
     return {
-      bgColor: 'bg-' + this.color,
-      textColor: 'text-' + this.color,
-      shadow: 'shadow-md shadow-' + this.color + '-500/50'
+      iconBg,
+      iconColor,
+      titleColor,
+      textColor,
+      shadow,
     }
-  }
+  },
+}
+const modes = {
+  light: {
+    iconBg: 'bg-white',
+    iconColor: 'blue',
+    titleColor: 'white',
+    textColor: 'gray-200',
+    shadow: 'shadow-md shadow-white' + '-500/50',
+  },
+  dark: {
+    iconBg: 'bg-blue',
+    iconColor: 'white',
+    titleColor: 'blue',
+    textColor: 'gray-500',
+    shadow: 'shadow-md shadow-blue' + '-500/50',
+  },
 }
 </script>

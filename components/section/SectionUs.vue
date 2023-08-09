@@ -13,7 +13,7 @@
           <li v-for="(item, index) of data" :key="index">
             <div class="flex items-center justify-between max-w-lg">
               <div class="flex items-center">
-                <CheckDecagramOutlineIcon :size="28" class="text-yellow" />
+                <CheckDecagramOutlineIcon :size="28" class="text-blue" />
                 <span class="ml-4 text-gray-500">{{ item }}</span>
               </div>
             </div>
@@ -33,7 +33,6 @@
             :title="item.title"
             :description="item.description"
             :icon="item.icon"
-            color="blue"
           />
         </dl>
 

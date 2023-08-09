@@ -1,5 +1,5 @@
 <template>
-  <BaseSection id="contact" class="dark-bg" separatorTop separatorBottom>
+  <BaseSection id="contact" class="bg-gray-600" separatorTop separatorBottom>
     <div class="lg:grid lg:grid-cols-2 lg:gap-16">
       <div class="bg-white my-16 self-center justify-start max-w-lg overflow-hidden rounded-full hidden lg:flex">
         <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:512px" src="/img/message.svg" />

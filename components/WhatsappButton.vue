@@ -50,7 +50,7 @@ export default {
 }
 
 .wsp:hover {
-  background: rgb(54, 151, 65);
+  filter: brightness(1.2);
 }
 .wsp:after {
   content: '';

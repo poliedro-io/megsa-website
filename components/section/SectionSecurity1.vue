@@ -18,6 +18,7 @@
         </div>
       </div>
       <div>
+        <p class="text-gray-600 text-2xl leading-tight">Cómo controlamos el sistema de gestión de SST:</p>
         <dl class="my-8 space-y-14 md:space-y-0 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-16">
           <BaseItem
             v-for="(item, index) in items"
@@ -25,11 +26,10 @@
             :title="item.title"
             :description="item.description"
             :icon="item.icon"
-            color="blue"
           />
         </dl>
 
-        <button v-smooth-scroll href="#contact" class="mt-8 w-full sm:w-40 btn blue">Contactar</button>
+        <ContactButton />
       </div>
     </div>
   </BaseSection>
