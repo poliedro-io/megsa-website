@@ -22,7 +22,7 @@
           </div>
 
           <div class="flex-1 flex items-center lg:justify-between">
-            <a href="#hero" class="flex-shrink-0 flex items-center cursor-pointer" v-smooth-scroll>
+            <a href="#home" class="flex-shrink-0 flex items-center cursor-pointer" v-smooth-scroll>
               <nuxt-img
                 placeholder
                 loading="lazy"

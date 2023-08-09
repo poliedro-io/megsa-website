@@ -1,42 +1,23 @@
 <template>
-  <footer class="max-w-screen-xl mx-auto">
+  <footer class="mx-auto bg-gray-900">
     <div class="w-full">
-      <div class="w-full md:py-20 divide-y lg:divide-y-0 lg:grid lg:grid-cols-3 lg:gap-8 lg:divide-x">
-        <div class="flex justify-center items-center md:items-start min-h-[300px]" v-smooth-scroll href="#hero">
-          <nuxt-img
-            placeholder
-            loading="lazy"
-            src="/img/logo-lg.svg"
-            class="invert opacity-70 hover:opacity-100 h-16"
-            alt="Logo Poliedro"
-            width="300"
-            height="300"
-          />
-        </div>
-
-        <div class="pl-4 py-6">
-          <p class="text-lg text-semibold text-gray-800 mb-6">Contacto</p>
+      <div class="w-full md:pt-40 pb-20 grid gap-8 px-6">
+        <a class="flex justify-start items-center md:items-start" v-smooth-scroll href="#home">
+          <nuxt-img placeholder loading="lazy" src="/img/logo-lg.png" class="hover:opacity-100 h-16" alt="Logo Megsa" />
+        </a>
+        <div>
+          <p class="text-lg text-semibold text-gray-200 mb-6">Contacto</p>
           <ul class="space-y-4">
             <div v-for="(item, index) of contact" :key="index" class="flex space-x-4">
-              <component v-bind:is="item.icon"></component>
-              <NavLink :name="item.text" :url="item.url" />
-            </div>
-          </ul>
-        </div>
-
-        <div class="pl-4 py-6">
-          <p class="text-lg text-semibold text-gray-800 mb-6">Mapa del sitio</p>
-          <ul class="space-y-4">
-            <div v-for="(item, index) of sections" :key="index" class="flex space-x-4 items-center">
-              <circle-small-icon />
-              <NavLink :name="item.text" :url="item.url" />
+              <component v-bind:is="item.icon" class="text-white"></component>
+              <NavLink alt :name="item.text" :url="item.url" />
             </div>
           </ul>
         </div>
       </div>
     </div>
-    <div class="py-8 sm:py-4 text-center text-sm text-[#666666] hover:text-gray-900 border-t sm:border-t-0">
-      &reg; Poliedro ltda. 2022. <br />
+    <div class="py-8 sm:py-4 text-center text-sm text-white">
+      &reg; Poliedro ltda. 2023. <br />
       Todos los derechos reservados
     </div>
   </footer>
@@ -80,22 +61,9 @@ export default {
           url: 'https://www.instagram.com/poliedro.io/',
         },
       ],
-      sections: [
-        { text: 'Servicios', url: '#services', icon: '' },
-        { text: 'Funcionalidades', url: '#features', icon: '' },
-        { text: 'Partner digital', url: '#partner', icon: '' },
-        { text: 'Digitalización', url: '#digitalization', icon: '' },
-        { text: 'Brochure', url: '#brochure', icon: '' },
-        { text: 'Clientes', url: '#customers', icon: '' },
-        { text: 'Contacto', url: '#contact', icon: '' },
-      ],
     }
   },
 }
 </script>
 
-<style scoped>
-.invert {
-  filter: invert(1);
-}
-</style>
+<style scoped></style>

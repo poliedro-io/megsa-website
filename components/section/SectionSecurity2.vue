@@ -1,5 +1,5 @@
 <template>
-  <BaseSection id="solutions" class="bg-gray-800" separatorTop separatorBottom>
+  <BaseSection id="solutions" class="bg-blue-800" separatorTop separatorBottom>
     <div class="px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <BaseHeader alt color="yellow" center title="Nuestras directrices en materia de seguridad laboral" />
@@ -17,7 +17,7 @@
       />
     </dl>
 
-    <ContactButton centered />
+    <ContactButton alt centered />
   </BaseSection>
 </template>
 

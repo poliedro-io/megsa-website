@@ -30,7 +30,7 @@
 
         <div class="md:flex md:space-x-4" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
           <button v-smooth-scroll href="#contact" outlined class="w-full md:w-40 btn blue mt-4">Contactar</button>
-          <button v-smooth-scroll href="#brochure" outlined class="w-full md:w-40 btn yellow mt-4">Saber más</button>
+          <button v-smooth-scroll href="#solutions" outlined class="w-full md:w-40 btn blue mt-4">Saber más</button>
         </div>
       </div>
     </div>

@@ -1,8 +1,11 @@
 <template>
   <li class="w-full">
     <a
-     v-smooth-scroll
-      class="py-2 text-sm bg-transparent rounded-lg text-[#666666] hover:text-gray-900 focus:outline-none focus:shadow-outline"
+      v-smooth-scroll
+      :class="[
+        'py-2 text-sm bg-transparent rounded-lg focus:outline-none focus:shadow-outline',
+        alt ? 'text-gray-200 hover:text-white' : 'text-[#666666] hover:text-gray-900',
+      ]"
       :href="url"
     >
       {{ name }}
@@ -12,6 +15,7 @@
 <script>
 export default {
   props: {
+    alt: Boolean,
     name: {
       type: String,
       required: true,

@@ -1,6 +1,6 @@
 <template>
   <div :class="['mt-16 flex', centered ? 'justify-center' : 'justify-start']">
-    <a v-smooth-scroll href="#contact" class="btn blue w-full sm:w-40">Contactar</a>
+    <a v-smooth-scroll href="#contact" :class="['btn w-full sm:w-40', alt ? 'gray' : 'blue']">Contactar</a>
   </div>
 </template>
 
@@ -8,6 +8,7 @@
 export default {
   props: {
     centered: Boolean,
+    alt: Boolean,
   },
 }
 </script>
