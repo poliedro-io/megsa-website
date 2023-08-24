@@ -1,64 +1,67 @@
 <template>
   <footer class="mx-auto bg-gray-900">
     <div class="w-full">
-      <div class="w-full md:pt-40 pb-20 grid gap-8 px-6">
-        <a class="flex justify-start items-center md:items-start" v-smooth-scroll href="#home">
-          <nuxt-img placeholder loading="lazy" src="/img/logo-lg.png" class="hover:opacity-100 h-16" alt="Logo Megsa" />
+      <div class="w-full py-20 grid md:grid-cols-2 gap-8 px-6">
+        <a class="flex justify-center items-center" v-smooth-scroll href="#home">
+          <nuxt-img
+            placeholder
+            loading="lazy"
+            src="/img/logo-lg-invert.png"
+            class="hover:opacity-100 h-20"
+            alt="Logo Megsa"
+          />
         </a>
         <div>
           <p class="text-lg text-semibold text-gray-200 mb-6">Contacto</p>
           <ul class="space-y-4">
-            <div v-for="(item, index) of contact" :key="index" class="flex space-x-4">
-              <component v-bind:is="item.icon" class="text-white"></component>
+            <li v-for="(item, index) of contact" :key="index" class="flex space-x-4">
+              <component :is="item.icon" class="text-white"></component>
               <NavLink alt :name="item.text" :url="item.url" />
-            </div>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="py-8 sm:py-4 text-center text-sm text-white">
-      &reg; Poliedro ltda. 2023. <br />
-      Todos los derechos reservados
+    <div class="py-8 sm:py-4 text-center">
+      <a href="https://www.poliedro.io" target="_blank" class="text-xs text-white">&reg; Poliedro 2023 <br /></a>
     </div>
   </footer>
 </template>
 <script>
-import InstagramIcon from 'vue-material-design-icons/Instagram.vue'
-import FacebookIcon from 'vue-material-design-icons/Facebook.vue'
-import PhoneOutlineIcon from 'vue-material-design-icons/PhoneOutline.vue'
-import EmailOutlineIcon from 'vue-material-design-icons/EmailOutline.vue'
-import WhatsappIcon from 'vue-material-design-icons/Whatsapp.vue'
 export default {
-  components: {
-    InstagramIcon,
-    FacebookIcon,
-    PhoneOutlineIcon,
-    EmailOutlineIcon,
-    WhatsappIcon,
-  },
   name: 'BaseFooter',
   data() {
     return {
       contact: [
         {
-          text: '+569 64033243',
-          icon: WhatsappIcon,
-          url: 'https://wa.me/56964033243',
+          text: 'Bellavista Parc.15, La Serena, IV Región',
+          icon: 'map-marker-outline-icon',
+          url: 'https://www.google.com/maps/search/BELLAVISTA+PC15,+LA+SERENA,+IV+REGION+COQUIMBO,+CHILE/@-29.9290483,-71.1856772,17.17z?entry=ttu',
         },
         {
-          text: '+569 64033243',
-          icon: PhoneOutlineIcon,
-          url: 'tel:56964033243',
+          text: 'contacto@megsa.cl',
+          icon: 'email-icon',
+          url: 'mailto: contacto@megsa.cl',
         },
         {
-          text: 'contacto@poliedro.io',
-          icon: EmailOutlineIcon,
-          url: 'mailto: contacto@poliedro.io',
+          text: 'Megsa SpA',
+          icon: 'linkedin-icon',
+          url: 'https://www.linkedin.com/in/megsa-spa-52b814170',
         },
         {
-          text: '@poliedro.io',
-          icon: InstagramIcon,
-          url: 'https://www.instagram.com/poliedro.io/',
+          text: 'contacto@megsa.cl',
+          icon: 'email-icon',
+          url: 'mailto: contacto@megsa.cl',
+        },
+        {
+          text: '+56973306950',
+          icon: 'whatsapp-icon',
+          url: 'https://wa.me/56973306950',
+        },
+        {
+          text: '+56973306950',
+          icon: 'phone-icon',
+          url: 'tel:56973306950',
         },
       ],
     }

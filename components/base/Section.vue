@@ -15,7 +15,7 @@
     <div
       data-aos="fade-up"
       data-aos-once="true"
-      :class="['max-w-7xl mx-auto py-20', noPaddingX ? 'px-0' : 'px-4 sm:px-6 lg:px-16']"
+      :class="['max-w-7xl mx-auto py-8 md:py-20', noPaddingX ? 'px-0' : 'px-4 sm:px-6 lg:px-16']"
     >
       <slot></slot>
     </div>

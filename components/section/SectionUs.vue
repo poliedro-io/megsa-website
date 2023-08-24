@@ -2,7 +2,7 @@
   <BaseSection id="us" bg-color="blue-50">
     <div class="lg:grid lg:grid-cols-2 lg:gap-28">
       <div>
-        <BaseHeader color="blue" title="Nosotros" />
+        <BaseHeader color="blue" title="Sobre Nosotros" />
 
         <p class="section-paragraph">
           Somos una empresa especialista en la prestación de servicios de

@@ -1,25 +1,16 @@
 <template>
-  <form
-    name="contact"
-    class="md:flex md:items-center"
-    method="post"
-    data-netlify="true"
-    netlify-honeypot="test-field"
-    action="/form"
-  >
+  <form name="contact" method="post" data-netlify="true" netlify-honeypot="test-field" action="/form">
     <input type="hidden" name="form-name" value="contact" />
 
-    <div class="md:hover:shadow-xl transition">
-      <div class="hidden md:block py-6 px-4 md:bg-gray-100 rounded-t-md">
-        <p class="text-xl text-gray-600 font-medium">Formulario de contacto</p>
-      </div>
-      <div class="md:px-4 md:py-5 md:bg-white md:p-6">
+    <div>
+      <p class="text-xl font-medium text-white">O escríbenos directamente desde aquí:</p>
+      <div class="py-6">
         <div class="grid grid-cols-2 gap-4 md:gap-6">
           <div class="col-span-2 sm:col-span-1">
             <div class="hidden">
               <label> Test field: <input name="test-field" /> </label>
             </div>
-            <label for="email" class="block text-sm font-medium text-gray-300 md:text-blue-600">Email</label>
+            <label for="email" class="block text-sm font-medium text-gray-300">Tu email</label>
             <input
               type="email"
               name="email"
@@ -32,7 +23,7 @@
 
           <div class="col-span-2 sm:col-span-1">
             <div class="flex justify-between">
-              <label for="nombre" class="block text-sm font-medium text-gray-300 md:text-blue-600">Teléfono</label>
+              <label for="nombre" class="block text-sm font-medium text-gray-300">Tu teléfono</label>
               <span class="text-gray-400 text-sm">Opcional</span>
             </div>
             <input
@@ -45,7 +36,7 @@
           </div>
 
           <div class="col-span-2">
-            <label for="mensaje" class="block text-sm font-medium text-gray-300 md:text-blue-600">Mensaje</label>
+            <label for="mensaje" class="block text-sm font-medium text-gray-300">Mensaje</label>
             <div class="mt-1">
               <textarea
                 name="mensaje"
@@ -59,7 +50,7 @@
         </div>
       </div>
 
-      <div class="py-6 md:p-4 md:bg-gray-100 text-right rounded-b-md">
+      <div class="py-4 text-right rounded-b-md">
         <button type="submit" class="btn blue w-full md:w-40">Enviar</button>
       </div>
     </div>

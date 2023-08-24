@@ -54,6 +54,10 @@ import HardHatIcon from 'vue-material-design-icons/HardHat.vue'
 import HumanMaleBoardIcon from 'vue-material-design-icons/HumanMaleBoard.vue'
 import CommentAlertOutlineIcon from 'vue-material-design-icons/CommentAlertOutline.vue'
 import AlertOutlineIcon from 'vue-material-design-icons/AlertOutline.vue'
+import CraneIcon from 'vue-material-design-icons/Crane.vue'
+import AccountGroupIcon from 'vue-material-design-icons/AccountGroup.vue'
+import MapMarkerOutlineIcon from 'vue-material-design-icons/MapMarkerOutline.vue'
+import LinkedinIcon from 'vue-material-design-icons/Linkedin.vue'
 
 const components = {
   ChevronDownIcon,
@@ -70,7 +74,6 @@ const components = {
   CloseIcon,
   DownloadIcon,
   MenuIcon,
-
   CartOutlineIcon,
   MapOutlineIcon,
   FormatListChecksIcon,
@@ -79,14 +82,12 @@ const components = {
   ToolsIcon,
   ViewDashboardOutlineIcon,
   ChartGanttIcon,
-
   PuzzleOutlineIcon,
   ResponsiveIcon,
   CloudLockOutlineIcon,
   ClockCheckOutlineIcon,
   AccountKeyOutlineIcon,
   FileDownloadOutlineIcon,
-
   TrendingUpIcon,
   SpeedometerIcon,
   CurrencyUsdIcon,
@@ -94,13 +95,11 @@ const components = {
   GoogleCirclesExtendedIcon,
   CellphoneIcon,
   LightningBoltOutlineIcon,
-
   InstagramIcon,
   EmailIcon,
   PhoneIcon,
   FacebookIcon,
   WhatsappIcon,
-
   CircleSmallIcon,
   MapMarkerCheckOutlineIcon,
   RemoteIcon,
@@ -114,6 +113,10 @@ const components = {
   HumanMaleBoardIcon,
   CommentAlertOutlineIcon,
   AlertOutlineIcon,
+  CraneIcon,
+  AccountGroupIcon,
+  MapMarkerOutlineIcon,
+  LinkedinIcon,
 }
 
 Object.entries(components).forEach(([name, component]) => Vue.component(name, component))

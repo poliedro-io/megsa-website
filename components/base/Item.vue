@@ -50,7 +50,7 @@ const modes = {
     iconBg: 'bg-blue',
     iconColor: 'white',
     titleColor: 'blue',
-    textColor: 'gray-500',
+    textColor: 'gray-600',
     shadow: 'shadow-md shadow-blue' + '-500/50',
   },
 }

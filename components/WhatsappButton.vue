@@ -1,6 +1,6 @@
 <template>
   <a
-    href="https://wa.me/56964033243"
+    href="https://wa.me/56973306950"
     class="no-select wsp rounded-full text-white p-4 shadow-lg"
     :class="[{ invisible: !isButtonVisible }]"
   >

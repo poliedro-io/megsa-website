@@ -1,5 +1,5 @@
 <template>
-  <li class="w-full">
+  <div class="w-full">
     <a
       v-smooth-scroll
       :class="[
@@ -10,7 +10,7 @@
     >
       {{ name }}
     </a>
-  </li>
+  </div>
 </template>
 <script>
 export default {
