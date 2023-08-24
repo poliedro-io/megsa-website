@@ -15,7 +15,7 @@
 }
 
 .navbar-button {
-  @apply text-center text-white bg-transparent border-2 border-yellow-700  hover:bg-yellow-700 px-3 py-2 rounded-md text-sm font-medium transition-all;
+  @apply text-center text-white bg-transparent border-2 border-yellow-700  hover:bg-yellow-700 px-3 py-2 rounded-sm text-sm font-medium transition-all;
 }
 
 .navbar-button.alt {
@@ -23,7 +23,7 @@
 }
 
 .navbar-item {
-  @apply text-center text-gray-600 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md uppercase text-sm;
+  @apply text-center border-b-2 border-b-transparent text-gray-600 lg:hover:border-b-gray-300 block px-3 py-2 rounded-sm uppercase text-sm;
 }
 
 .navbar-item.alt {
@@ -31,12 +31,11 @@
 }
 
 .navbar-item.selected {
-  transition: background 150ms ease-in-out;
-  @apply bg-gray-900 text-white;
+  @apply lg:border-blue;
 }
 
 .btn {
-  @apply transition inline-flex justify-center py-3 md:px-4 border font-medium rounded-md focus:outline-none  text-white text-base border-transparent shadow-lg;
+  @apply transition inline-flex justify-center py-3 md:px-4 border font-medium rounded-sm focus:outline-none  text-white text-base border-transparent shadow-lg;
 }
 
 .btn.blue {
