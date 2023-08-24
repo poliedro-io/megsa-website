@@ -2,7 +2,7 @@
   <footer class="mx-auto bg-gray-900">
     <div class="w-full">
       <div class="w-full py-20 grid md:grid-cols-2 gap-8 px-6">
-        <a class="flex justify-center items-center" v-smooth-scroll href="#home">
+        <a class="flex justify-center items-center" href="#home">
           <nuxt-img
             placeholder
             loading="lazy"

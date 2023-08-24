@@ -41,15 +41,6 @@
 import aosMixin from '@/mixins/aos'
 export default {
   mixins: [aosMixin],
-  methods: {
-    downloadBrochure() {
-      const a = document.createElement('a')
-      a.setAttribute('href', 'https://drive.google.com/file/d/1jNK6Rk6IWY_BHN9WnzZfDrWGZy_hkho_/view?usp=sharing')
-      a.setAttribute('target', '_blank')
-      a.setAttribute('download', 'brochure-poliedro.pdf')
-      a.click()
-    },
-  },
 }
 </script>
 

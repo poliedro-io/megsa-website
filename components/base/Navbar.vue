@@ -7,10 +7,7 @@
             <button
               id="menu-button"
               type="button"
-              :class="[
-                isNavbarActive || isMenuActive ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-800 hover:text-white',
-                'inline-flex items-center justify-center active:bg-none p-2 rounded-full  focus:outline-none',
-              ]"
+              class="text-gray-800 hover:text-white inline-flex items-center justify-center active:bg-none p-2 rounded-full focus:outline-none"
               aria-controls="mobile-menu"
               aria-expanded="false"
               @click="toggleMenu"
@@ -22,7 +19,7 @@
           </div>
 
           <div class="flex-1 flex items-center lg:justify-between">
-            <a href="#home" class="flex-shrink-0 flex items-center cursor-pointer" v-smooth-scroll>
+            <a href="#home" class="flex-shrink-0 flex items-center cursor-pointer">
               <nuxt-img
                 placeholder
                 loading="lazy"
@@ -39,7 +36,6 @@
                   v-for="(item, index) of sections"
                   :key="index"
                   :href="item.id"
-                  v-smooth-scroll
                   v-bind:class="[{ selected: isSelected(item.id) }, { alt: !isNavbarActive }, 'navbar-item']"
                   aria-current="page"
                   >{{ item.title }}</a
@@ -50,12 +46,11 @@
         </div>
       </div>
 
-      <div id="mobile-menu" :class="['bg-gray-800 xl:hidden shadow-xl', isMenuActive ? 'active' : '']">
-        <div class="py-4 space-y-2">
+      <div id="mobile-menu" :class="['bg-white xl:hidden shadow-2xl', isMenuActive ? 'active' : '']">
+        <div class="py-4 space-y-4">
           <a
             v-for="(item, index) of sections"
             :key="index"
-            v-smooth-scroll
             :href="item.id"
             v-bind:class="[{ selected: isSelected(item.id) }, 'navbar-item']"
             aria-current="page"
@@ -126,13 +121,6 @@ export default {
       setTimeout(() => {
         this.isMenuActive = !this.isMenuActive
       }, 5)
-    },
-    downloadBrochure() {
-      const a = document.createElement('a')
-      a.setAttribute('href', 'https://drive.google.com/file/d/1jNK6Rk6IWY_BHN9WnzZfDrWGZy_hkho_/view?usp=sharing')
-      a.setAttribute('target', '_blank')
-      a.setAttribute('download', 'brochure-poliedro.pdf')
-      a.click()
     },
   },
 }
