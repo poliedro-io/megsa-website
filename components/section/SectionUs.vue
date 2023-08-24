@@ -5,8 +5,8 @@
         <BaseHeader color="blue" title="Nosotros" />
 
         <p class="section-paragraph">
-          Somos una empresa especialista en la prestación de servicios con un importante énfasis en Sostenibilidad.
-          Nuestras fortalezas:
+          Somos una empresa especialista en la prestación de servicios de
+          <b>aseo industrial, mantenimiento y certificación de equipos</b>, con énfasis en la sostenibilidad.
         </p>
 
         <ul class="space-y-6 my-8">
@@ -26,7 +26,8 @@
       </div>
 
       <div class="mt-10">
-        <dl class="space-y-14 md:space-y-0 md:grid md:grid-cols-2 md:gap-12">
+        <p class="text-gray-600 text-2xl leading-tight">Nuestras fortalezas:</p>
+        <dl class="my-8 space-y-14 md:space-y-0 md:grid md:grid-cols-2 md:gap-12">
           <BaseItem
             v-for="(item, index) in items || []"
             :key="index"
@@ -36,7 +37,7 @@
           />
         </dl>
 
-        <button v-smooth-scroll href="#contact" class="mt-16 w-full sm:w-40 btn blue">Contactar</button>
+        <ContactButton />
       </div>
     </div>
   </BaseSection>
@@ -51,10 +52,10 @@ export default {
   data() {
     return {
       data: [
-        'Empresa Pequeña con más de 25 años de experiencia e historia.',
-        'Presencia directa en 5 regiones de nuestro país y cobertura parcial en 7 regiones.',
-        'Prestación de servicios intensivos en mano de obra.',
-        'Dotación Total: 13 Colaboradores (5 migrantes + 8 nacionales).',
+        'Tenemos más de 25 años de experiencia e historia.',
+        'Tenemos presencia directa en 5 regiones de nuestro país y cobertura parcial en 7 regiones.',
+        'Prestamos servicios intensivos en mano de obra.',
+        'Tenemos una dotación total de 13 colaboradores (5 migrantes + 8 nacionales).',
       ],
     }
   },

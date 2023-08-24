@@ -15,16 +15,14 @@
     </div>
 
     <div class="my-12">
-      <div
-        class="px-4 pb-6 snap-x flex overflow-x-auto w-full gap-4 md:snap-none md:grid md:grid-cols-3 xl:grid-cols-4 md:gap-12"
-      >
+      <div class="px-8 pb-6 snap-x flex overflow-x-auto w-full gap-4 md:snap-none md:grid md:grid-cols-3 md:gap-16">
         <div
           v-for="(item, index) in items || []"
           :key="index"
           class="group scroll-ml-4 snap-start shrink-0 w-[80%] md:w-[100%] cursor-default"
         >
           <div
-            class="max-w-[100%] h-[180px] rounded-lg overflow-hidden bg-white flex justify-center align-center shadow-xl"
+            class="max-w-[100%] h-[260px] rounded-lg overflow-hidden bg-white flex justify-center align-center shadow-xl"
           >
             <nuxt-img
               placeholder
@@ -34,8 +32,8 @@
               :src="'/img/solutions/' + item.image"
             />
           </div>
-          <p class="mt-4 text-base font-medium text-yellow group-hover:text-yellow-400">{{ item.title }}</p>
-          <p class="text-sm text-gray-200 group-hover:text-white">
+          <p class="mt-8 mb-4 text-xl text-white font-medium">{{ item.title }}</p>
+          <p class="text-md text-gray-200 group-hover:text-white">
             {{ item.description }}
           </p>
         </div>

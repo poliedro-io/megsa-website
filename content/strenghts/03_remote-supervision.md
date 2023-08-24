@@ -1,6 +1,6 @@
 ---
 id: 3
-icon: cloud-lock-outline-icon
+icon: remote-icon
 title: Supervisión remota
-description: Disponemos de supervisión remota que nos permite mantenernos conectados con el personal en zonas lejanas para asistir, apoyar e implementar soluciones efectivas, con excelentes resultados.
+description: Contamos con supervisión remota para brindar apoyo y asistencia a nuestro personal en áreas distantes, con excelentes resultados.
 ---

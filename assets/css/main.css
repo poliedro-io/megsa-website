@@ -39,11 +39,11 @@
 }
 
 .btn.blue {
-  @apply focus:ring-blue bg-blue hover:bg-blue-800  hover:shadow-blue-500/50;
+  @apply focus:ring-blue bg-blue hover:bg-blue-800 hover:shadow-lg;
 }
 
 .btn.gray {
-  @apply bg-gray-900 hover:bg-gray-800  hover:shadow-sm;
+  @apply bg-gray-900 hover:bg-gray-800  hover:shadow-lg;
 }
 
 .section-paragraph {

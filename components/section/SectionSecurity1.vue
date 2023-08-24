@@ -9,7 +9,7 @@
           en función de nuestras acciones.
         </p>
         <p class="section-paragraph">
-          Con el fin de evitar cualquier daño tanto a nosotros, los equipos o el medio ambiente son necesarios diversos
+          Con el fin de evitar cualquier daño tanto a nosotros, los equipos o el medio ambiente, son necesarios diversos
           controles, los cuales varían de acuerdo a cada labor a realizar.
         </p>
 

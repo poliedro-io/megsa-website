@@ -1,6 +1,6 @@
 ---
 id: 4
-icon: lightning-bolt-outline-icon
-title: Planificación eficiente
-description: Trabajamos con Lista de tareas que nos permite objetivar el proceso de supervisión y el trabajo de nuestro personal.
+icon: format-list-checks-icon
+title: Planificación inteligente
+description: Empleamos Listas de Tareas para la concreción objetiva tanto del proceso de supervisión como de las labores de nuestro equipo.
 ---

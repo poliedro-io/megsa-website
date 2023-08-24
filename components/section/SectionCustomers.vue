@@ -4,7 +4,7 @@
       <BaseHeader color="blue" center title="Nuestros principales clientes" />
     </div>
 
-    <div data-aos="fade-up" class="my-8 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
+    <div data-aos="fade-up" class="my-16 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
       <a
         v-for="(item, index) of items"
         :key="index"
@@ -20,10 +20,6 @@
           :alt="item.name"
         />
       </a>
-    </div>
-
-    <div class="mt-24 max-w-xl mx-auto">
-      <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:576px" src="/img/customers.svg" alt="clientes" />
     </div>
   </BaseSection>
 </template>

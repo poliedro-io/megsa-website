@@ -42,6 +42,18 @@ import CellphoneIcon from 'vue-material-design-icons/Cellphone.vue'
 import LightningBoltOutlineIcon from 'vue-material-design-icons/LightningBoltOutline.vue'
 import WhatsappIcon from 'vue-material-design-icons/Whatsapp.vue'
 import CircleSmallIcon from 'vue-material-design-icons/CircleSmall.vue'
+import MapMarkerCheckOutlineIcon from 'vue-material-design-icons/MapMarkerCheckOutline.vue'
+import RemoteIcon from 'vue-material-design-icons/Remote.vue'
+import EyeOutlineIcon from 'vue-material-design-icons/EyeOutline.vue'
+import ToolboxOutlineIcon from 'vue-material-design-icons/ToolboxOutline.vue'
+import AlertCircleOutlineIcon from 'vue-material-design-icons/AlertCircleOutline.vue'
+import BellOutlineIcon from 'vue-material-design-icons/BellOutline.vue'
+import AccountHardHatIcon from 'vue-material-design-icons/AccountHardHat.vue'
+import SignCautionIcon from 'vue-material-design-icons/SignCaution.vue'
+import HardHatIcon from 'vue-material-design-icons/HardHat.vue'
+import HumanMaleBoardIcon from 'vue-material-design-icons/HumanMaleBoard.vue'
+import CommentAlertOutlineIcon from 'vue-material-design-icons/CommentAlertOutline.vue'
+import AlertOutlineIcon from 'vue-material-design-icons/AlertOutline.vue'
 
 const components = {
   ChevronDownIcon,
@@ -82,16 +94,26 @@ const components = {
   GoogleCirclesExtendedIcon,
   CellphoneIcon,
   LightningBoltOutlineIcon,
-  
+
   InstagramIcon,
   EmailIcon,
   PhoneIcon,
   FacebookIcon,
   WhatsappIcon,
 
-  CircleSmallIcon
+  CircleSmallIcon,
+  MapMarkerCheckOutlineIcon,
+  RemoteIcon,
+  EyeOutlineIcon,
+  ToolboxOutlineIcon,
+  AlertCircleOutlineIcon,
+  BellOutlineIcon,
+  AccountHardHatIcon,
+  SignCautionIcon,
+  HardHatIcon,
+  HumanMaleBoardIcon,
+  CommentAlertOutlineIcon,
+  AlertOutlineIcon,
 }
 
-Object.entries(components).forEach(([name, component]) =>
-  Vue.component(name, component)
-)
+Object.entries(components).forEach(([name, component]) => Vue.component(name, component))
