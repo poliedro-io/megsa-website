@@ -19,7 +19,7 @@
         </p>
 
         <div class="md:flex md:space-x-4" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
-          <a href="#contact" outlined class="w-full md:w-40 btn gray mt-4">Contactar</a>
+          <a href="#contact" outlined class="w-full md:w-40 btn black mt-4">Contactar</a>
           <a href="#us" outlined class="w-full md:w-40 btn blue mt-4">Saber más</a>
         </div>
       </div>

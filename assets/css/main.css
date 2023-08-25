@@ -46,6 +46,11 @@
   @apply bg-gray-900 hover:bg-gray-800  hover:shadow-lg;
 }
 
+.btn.black {
+  background-color: black;
+  @apply hover:bg-gray-900 hover:shadow-lg;
+}
+
 .section-paragraph {
   @apply text-base mb-4 leading-7 text-gray-600;
 }
