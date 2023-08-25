@@ -1,10 +1,10 @@
 <template>
   <BaseSection
     noPadding
-    class="min-h-[70vh] mt-[64px] mb-20 flex items-center bg-[url('/img/bg.webp')] bg-cover"
+    class="min-h-[100vh] mt-[64px] mb-20 flex items-start pt-20 md:pt-0 md:item-center bg-[url('/img/bg.webp')] bg-cover"
     id="home"
   >
-    <div class="lg:grid lg:grid-cols-2 lg:gap-x-8 items-center">
+    <div class="lg:grid lg:grid-cols-2 gap-0 items-center">
       <div>
         <h1
           data-aos="fade-right"

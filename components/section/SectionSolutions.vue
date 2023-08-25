@@ -21,15 +21,14 @@
           :key="index"
           class="group scroll-ml-4 snap-start shrink-0 w-[80%] md:w-[100%] cursor-default"
         >
-          <div
-            class="max-w-[100%] h-[260px] rounded-lg overflow-hidden bg-white flex justify-center align-center shadow-xl"
-          >
+          <div class="flex justify-center align-center shadow-xl bg-white rounded-lg">
             <nuxt-img
-              placeholder
               loading="lazy"
-              width="300"
-              class="relative shrink-0 w-auto group-hover:opacity-70"
+              width="500"
+              height="333"
+              class="relative shrink-0 group-hover:opacity-80 w-[100%] rounded-lg"
               :src="'/img/solutions/' + item.image"
+              :alt="item.title"
             />
           </div>
           <p class="mt-8 mb-4 text-xl text-white font-medium">{{ item.title }}</p>

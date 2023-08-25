@@ -21,7 +21,7 @@
         </ul>
 
         <div class="lg:flex lg:justify-center max-w-lg my-8">
-          <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:512px" src="/img/rocket.svg" />
+          <nuxt-img class="rounded-lg" alt="nosotros" loading="lazy" width="600" height="429" src="/img/team.webp" />
         </div>
       </div>
 

@@ -14,10 +14,17 @@
         </p>
 
         <div class="my-8 lg:flex lg:justify-center max-w-lg">
-          <nuxt-img placeholder loading="lazy" sizes="sm:100vw lg:512px" src="/img/digitalization.svg" />
+          <nuxt-img
+            alt="seguridad"
+            class="rounded-lg"
+            loading="lazy"
+            width="600"
+            height="429"
+            src="/img/security.webp"
+          />
         </div>
       </div>
-      <div>
+      <div class="md:mt-20">
         <p class="text-gray-600 text-2xl leading-tight">Cómo controlamos el sistema de gestión de SST:</p>
         <dl class="my-8 space-y-14 md:space-y-0 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-16">
           <BaseItem
