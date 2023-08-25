@@ -1,15 +1,16 @@
 <template>
-  <div class="cursor-default">
+  <div class="group cursor-default">
     <dt>
       <div
         :class="[
+          'group-hover:shadow-md group-hover:shadow-blue-500/50',
+          mode === 'dark' ? 'group-hover:bg-blue-800' : 'group-hover:text-blue-800',
           iconBg,
-          shadow,
           `text-${iconColor}`,
           'transition-all flex items-center justify-center h-14 w-14 rounded-md p-4 mb-4',
         ]"
       >
-        <component :is="icon" :size="28" />
+        <component :is="icon" :size="32" />
       </div>
       <p v-if="title" :class="['text-base font-medium', `text-${titleColor}`]">{{ title }}</p>
     </dt>
@@ -28,13 +29,12 @@ export default {
     mode: { type: String, default: 'dark', validator: (value) => ['light', 'dark'].includes(value) },
   },
   data() {
-    const { iconBg, iconColor, titleColor, textColor, shadow } = modes[this.mode]
+    const { iconBg, iconColor, titleColor, textColor } = modes[this.mode]
     return {
       iconBg,
       iconColor,
       titleColor,
       textColor,
-      shadow,
     }
   },
 }
@@ -44,14 +44,12 @@ const modes = {
     iconColor: 'blue',
     titleColor: 'white',
     textColor: 'gray-200',
-    shadow: 'shadow-md shadow-white' + '-500/50',
   },
   dark: {
     iconBg: 'bg-blue',
     iconColor: 'white',
     titleColor: 'blue',
     textColor: 'gray-600',
-    shadow: 'shadow-md shadow-blue' + '-500/50',
   },
 }
 </script>

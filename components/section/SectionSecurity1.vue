@@ -2,7 +2,7 @@
   <BaseSection id="security">
     <div class="lg:grid lg:grid-cols-2 lg:gap-16">
       <div>
-        <BaseHeader title="Seguridad como primer valor" color="blue" />
+        <BaseHeader title="Ponemos la seguridad en primer lugar" color="blue" />
 
         <p class="section-paragraph">
           Todas las actividades que realizamos traen consigo un determinado riesgo, el cual puede aumentar o disminuir

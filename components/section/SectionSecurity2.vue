@@ -1,7 +1,7 @@
 <template>
   <BaseSection id="solutions" class="bg-blue-800" separatorTop separatorBottom>
     <div class="lg:text-center">
-      <BaseHeader alt center title="Nuestras directrices en materia de seguridad laboral" />
+      <BaseHeader alt center title="Nuestras directrices en materia de seguridad" />
     </div>
 
     <dl class="my-20 space-y-14 md:space-y-0 md:grid md:grid-cols-3 md:gap-y-8 md:gap-x-16">

@@ -1,6 +1,6 @@
 <template>
   <BaseSection id="contact" class="bg-gray-800" separatorTop>
-    <div class="grid lg:gap-x-16 grid-col lg:grid-cols-2">
+    <div class="grid lg:gap-x-20 grid-col lg:grid-cols-2">
       <div class="max-w-full">
         <BaseHeader alt title="Contacto" />
         <p class="section-paragraph white">

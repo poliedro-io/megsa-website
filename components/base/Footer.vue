@@ -49,11 +49,6 @@ export default {
           url: 'https://www.linkedin.com/in/megsa-spa-52b814170',
         },
         {
-          text: 'contacto@megsa.cl',
-          icon: 'email-icon',
-          url: 'mailto: contacto@megsa.cl',
-        },
-        {
           text: '+56973306950',
           icon: 'whatsapp-icon',
           url: 'https://wa.me/56973306950',
