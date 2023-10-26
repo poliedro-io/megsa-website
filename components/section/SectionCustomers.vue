@@ -1,6 +1,6 @@
 <template>
   <BaseSection :id="'customers'">
-    <div class="my-20">
+    <div class="mb-20">
       <div class="lg:text-center">
         <BaseHeader color="blue" center title="Nuestros principales clientes" />
       </div>

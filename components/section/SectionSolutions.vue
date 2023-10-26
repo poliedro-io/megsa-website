@@ -21,12 +21,12 @@
           :key="index"
           class="group scroll-ml-4 snap-start shrink-0 w-[80%] md:w-[100%] cursor-default"
         >
-          <div class="flex justify-center align-center shadow-xl bg-white rounded-lg">
+          <div class="flex justify-center align-center shadow-xl bg-white rounded-lg overflow-hidden">
             <nuxt-img
               loading="lazy"
               width="500"
               height="333"
-              class="relative shrink-0 group-hover:opacity-80 w-[100%] rounded-lg"
+              class="relative shrink-0 group-hover:opacity-80 w-[100%]"
               :src="'/img/solutions/' + item.image"
               :alt="item.title"
             />
